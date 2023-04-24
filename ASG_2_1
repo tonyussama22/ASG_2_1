@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main()
+{
+    int z;
+    char operator;
+    printf("Enter an operator (+, -, *, /): ");
+    scanf("%c", &operator);
+    printf("\nEnter First Number: ");
+    int x;
+    scanf("%d", &x);
+    printf("\nEnter Second Number: ");
+    int y;
+    scanf("%d", &y);
+
+    if (operator== '+')
+    {
+        z = x + y;
+    }
+    else if (operator== '/')
+    {
+        z = x / y;
+    }
+    else if (operator== '*')
+    {
+        z = x * y;
+    }
+    else
+    {
+        z = x - y;
+    }
+
+    printf("\nThe Result: %d\n", z);
+
+    return 0;
+}
